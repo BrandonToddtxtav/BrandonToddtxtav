@@ -12,5 +12,5 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
-- script: hello.pl
+- script: /usr/bin/perl hello.pl
   displayName: 'Run my script'
