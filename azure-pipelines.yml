@@ -6,9 +6,7 @@
 trigger:
 - main
 
-pool:
-  vmImage: redhat-7.9
-  agent: 'EEDS Linux'
+pool: 'EEDS Linux'
 
 steps:
 - script: echo Hello, world!
