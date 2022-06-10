@@ -9,10 +9,6 @@ trigger:
 pool: 'EEDS Linux'
 
 steps:
-- task: GitHubComment@0
-  inputs:
-    gitHubConnection: 'BrandonToddtxtav'
-    repositoryName: 'BrandonToddtxtav'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 - script: /usr/bin/perl hello.pl
