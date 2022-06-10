@@ -1,8 +1,4 @@
 # Starter pipeline
-- task: GitHubComment@0
-  inputs:
-    gitHubConnection: 'BrandonToddtxtav'
-    repositoryName: 'BrandonToddtxtav'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -13,8 +9,11 @@ trigger:
 pool: 'EEDS Linux'
 
 steps:
+- task: GitHubComment@0
+  inputs:
+    gitHubConnection: 'BrandonToddtxtav'
+    repositoryName: 'BrandonToddtxtav'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
-
 - script: /usr/bin/perl hello.pl
   displayName: 'Run my script'
